@@ -8,13 +8,13 @@
 ### 1. 프로그램 실행을 위해 필요한 라이브러리를 설치합니다.
 Pycharm의 Terminal에 아래의 내용을 입력합니다. 
 
-    pip install -r requirements.txt
-
+    pip install -r requirements.txt    
+   
 ### 2. 평가에 사용될 이미지 데이터와 그에 대한 정답값을 <test_dataset> 폴더에서 확인합니다.
 test_dataset/class -> 36,305개의 텍스트 이미지 파일 
-
+   
 test_dataset/gt.txt -> <test_dataset/class>에 저장된 이미지 파일에 대한 정답값
-
+   
 ### 3. <test_dataset>의 파일을 검증을 위한 lmdb형식으로 변환합니다.
 
 3-1. Pycharm의 Terminal에 아래의 내용을 입력합니다. 
