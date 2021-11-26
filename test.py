@@ -249,8 +249,8 @@ def test(opt):
             _, accuracy_by_best_model, _, _, _, _, _, _ = validation(
                 model, criterion, evaluation_loader, converter, opt)
             log.write(eval_data_log)
-            print(f'{accuracy_by_best_model:0.3f}')
-            log.write(f'{accuracy_by_best_model:0.3f}\n')
+            print("성능: ", f'{accuracy_by_best_model:0.3f}')
+            log.write("성능: " + f'{accuracy_by_best_model:0.3f}\n')
             log.close()
 
 
