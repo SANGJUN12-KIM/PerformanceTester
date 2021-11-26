@@ -5,17 +5,17 @@
 
 
 ## 사용법
-###1. 프로그램 실행을 위해 필요한 라이브러리를 설치합니다.
+### 1. 프로그램 실행을 위해 필요한 라이브러리를 설치합니다.
 Pycharm의 Terminal에 아래의 내용을 입력합니다. 
 
     pip install -r requirements.txt
 
-###2. 평가에 사용될 이미지 데이터와 그에 대한 정답값을 <test_dataset> 폴더에서 확인합니다.
+### 2. 평가에 사용될 이미지 데이터와 그에 대한 정답값을 <test_dataset> 폴더에서 확인합니다.
 test_dataset/class -> 36,305개의 텍스트 이미지 파일 
 
 test_dataset/gt.txt -> <test_dataset/class>에 저장된 이미지 파일에 대한 정답값
 
-###3. <test_dataset>의 파일을 검증을 위한 lmdb형식으로 변환합니다.
+### 3. <test_dataset>의 파일을 검증을 위한 lmdb형식으로 변환합니다.
 
 3-1. Pycharm의 Terminal에 아래의 내용을 입력합니다. 
         
@@ -25,7 +25,7 @@ test_dataset/gt.txt -> <test_dataset/class>에 저장된 이미지 파일에 대
 
 <test_lmdb> 폴더 안에는 data.mdb 와 lobk.mdb 총 2개의 파일이 저장되어 있습니다.
 
-###4. 변환된 lmdb 파일로 평가할 모델의 성능을 검사합니다.
+### 4. 변환된 lmdb 파일로 평가할 모델의 성능을 검사합니다.
 
 4-1.Pycharm의 Terminal에 아래의 내용을 입력합니다. 
         
@@ -50,7 +50,7 @@ test_dataset/gt.txt -> <test_dataset/class>에 저장된 이미지 파일에 대
          --------------------------------------------------------------------------------
          성능:  73.561
 
-###5. 모델의 평가된 성능을 <result> 폴더에서 확인합니다.
+### 5. 모델의 평가된 성능을 <result> 폴더에서 확인합니다.
 <result/model_best_accuracy.pth> 폴더 안에는 log_evaluation.txt 와 log_testdata_detail.txt 총 2개의 파일이 저장되어 있습니다.
 
 5-1. <log_evaluation.txt>에서 모델의 성능을 확인할 수 있습니다.
